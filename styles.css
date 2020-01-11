@@ -52,12 +52,12 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: #20B2AA;;
 }
 
 header {
   text-align: center;
-  background: url('images/ulm_skyline.jpg') no-repeat center ;
+  background: url('images/background_header-min.jpg') no-repeat center top ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -70,11 +70,11 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid black;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(7deg);
   border: 3px solid #20B2AA;
 }
 .tag {
@@ -89,7 +89,7 @@ header .profile-image:hover {
   background-color: #222;
   color: yellow;
 }
-.card {
+.article-card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
@@ -99,16 +99,19 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
-.card:hover {
+.article-card:hover {
   border-color: #20B2AA;
+  transform: scale(1.03) rotate(1deg);
 }
-.card .profile-image {
-  margin-top: 50px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+
+.card-picture {
+  clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.home-picture {
+  width: 400px;
+  height: auto;
+  border-radius: 5%;
 }
 
 ul.skills {
